@@ -1,0 +1,75 @@
+.skillSortableBlock{
+	overflow:auto;
+	margin-top:-4px;
+}
+
+.skillSortableBlock .leftGrabArea{
+	width:25px;
+	position:relative;
+	float:left;
+	overflow: auto;
+	cursor: pointer;
+	min-height:33px;
+}
+
+.skillSortableBlock .skill{
+	float:left;
+	line-height:33px;
+	width:290px;
+	
+}
+.skillSortableBlock .skill h4 {
+    width: 270px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.listHightlight .leftGrabArea{
+	background:url(../images/styleImages/sortListHighlight.png) no-repeat top left;
+}
+
+.listDefault .leftGrabArea{
+	background:url(../images/styleImages/sortListDefault.png) no-repeat top left;
+}
+
+.listHightlight .skill{
+	background:url(../images/styleImages/sortListHighlight.png) no-repeat right top;
+}
+
+.listDefault .skill{
+	background:url(../images/styleImages/sortListDefault.png) no-repeat right top;
+}
+
+#sortable1, #sortable2{
+	width:100%;
+	display:block;
+	min-height:40px;
+}
+
+/* #################### SKILLS DETAIL SORTABLE LIST #################### */
+
+#sortableDeatils li{
+	padding:5px 0;
+	margin-bottom:20px;
+	overflow:auto;
+	background-color:#CCC;
+}
+
+#sortableDeatils li.placeholder{
+	padding:5px 0;
+	margin-bottom:20px;
+	overflow:auto;
+	background-color:#555555;;
+}
+
+#sortableDeatils li .centerPartition{
+	float:left;
+	margin-right:20px;
+}
+
+#sortableDeatils li .rightPartition{
+	border-left:1px #000 solid;
+	float:left;
+}
