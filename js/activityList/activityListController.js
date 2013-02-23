@@ -6,7 +6,8 @@ steal(
             {
             defaults: {
                 activityView: '',
-				model: ''
+				model: '',
+				loaded: false
             }
             
 		  },
@@ -21,8 +22,8 @@ steal(
 			function activityResponse(data) {
 			     thisController.element.append(thisController.viewTemplate, data.activities);
 			     /*$.cookie(owner.options.model.attr('cookie'), response.profileId);
-			     owner.options.model.attr('storedId', $.cookie(owner.options.model.attr('cookie')));
-			     owner.options.model.attr('loaded', true);*/
+			     owner.options.model.attr('storedId', $.cookie(owner.options.model.attr('cookie')));*/
+			     thisController.options.model.attr('loaded', true);
 			}
 			function error(data){
 				console.log(data);

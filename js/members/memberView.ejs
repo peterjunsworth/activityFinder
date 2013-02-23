@@ -1,0 +1,4 @@
+<% $.each(this, function(i, member){ console.log(member.name); %>
+	<h1><%= member.name %></h1>
+	<a href="createActivity.html?member=<%= member.id %>">Create Activity</a>
+<% }) %>
