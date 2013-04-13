@@ -6,18 +6,25 @@ steal(
 	'jquery/lang/openajax',
 	'jquery/controller/subscribe')
 	.then(
+		'js/animation.js',
 		'js/activityList/activityListController.js',
-		'js/activityList/activityModel.js')
+		'js/activityList/activityModel.js',
+		'js/activityList/activityMapController.js')
 	.then(
 			
 	function($){
     
     	var activityModel = new Activity();
 		var activityListView = 'js/activityList/activityListView.ejs';
-    	var activityController = new Activities($('#activityList'), {activityView: activityListView, model: activityModel});
+		$('#searchActivities').click(function(e) {
+            var activityController = new Activities($('#activityList'), {activityView: activityListView, model: activityModel});
+        });
+		activityModel.bind('activities', function(ev, val){
+			var activityMap = new Map($('#mapSection'), {activities: val});
+		});
     
 		activityModel.bind('loaded', function(ev, val){
-			
+			//console.log(val);
 			// Set up everything else
 			
 			//if($('body.home').length > 0) new Login($(document));

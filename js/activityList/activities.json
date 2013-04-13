@@ -4,26 +4,34 @@
 			"title": "Golf Evening Drinking",
 			"time": "5:00 pm",
 			"day": "Friday",
-			"suburb":  null,
-			"city": "Oak park",
-			"zipcode": "60302",
+			"address": "626 West Randolph Street",
+			"suburb":  "",
+			"city": "Chicago",
+			"zipcode": "60661",
+			"country": "USA",
 			"involvement": "participation",
 			"type": "sport",
 			"activity": "golf",
-			"description": "Need a 4th for golf"
+			"description": "Need a 4th for golf",
+			"latitude": "",
+			"longitude": ""
 		},
 		{
 			"id": "1",
 			"title": "Surfing Comp",
 			"time": "2:00 pm",
 			"day": "Wednesday",
+			"address": "115 Sumnervale Drive",
 			"suburb": "Sumner",
 			"city": "Christchurch",
 			"zipcode": "8081",
+			"country": "New Zealand",
 			"involvement": "independent",
 			"type": "sport",
 			"activity": "surfing",
-			"description": "Next Wednsday evening"
+			"description": "Next Wednsday evening",
+			"latitude": "",
+			"longitude": ""
 		}
 	]
 }

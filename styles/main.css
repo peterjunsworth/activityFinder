@@ -196,10 +196,20 @@ header{
 	position:relative;
 }
 
-h1{
+h1, .titleHeader{
 	font-family: 'SourceSansProSemibold';
 	font-size:100px;
-	margin:0 0 16px 35px
+	margin:0 0 16px 35px;
+}
+
+.titleHeader{
+	margin:0;
+}
+
+ul, li{
+	list-style:none;
+	margin:0 0 20px 0;
+	padding:0;
 }
 
 .orangeText{
@@ -343,7 +353,7 @@ input, select{
 	height:0;
 }
 
-#login, #searchActivities, #postActivity, #registerBtn, #joinBtn, #headerJoin{
+#login, #searchActivities, #postActivity, #registerBtn, #joinBtn, #headerJoin, button{
 	background-color:#1c3a40;
 	display:block;
 	text-align:center;
@@ -360,6 +370,10 @@ input, select{
 	 color:#f3ebd3;
 	 margin: 0 auto;
 	clear: both;
+}
+
+.orange{
+	background-color:#f5a150;
 }
 
 #login{
@@ -563,14 +577,44 @@ label{
 	min-height: 470px;
 }
 
-/*.horizontalArrow{
-	display:none;
+.listSection, #mapSection{
+	width:50%;
+	float:left;
 }
 
-.article{
-	display:none;
+#activityList{
+	margin:0 0 20px 0;
+	border-top:15px #668c8c solid;
 }
 
-#article1{
+#activityList li{
+	margin-bottom:0;
+	background:url(../images/curvedArrow.png) no-repeat center right;
+}
+
+#activityList li:nth-child(even) {
+	background-color:#668c8c;
+	border-left:15px #1c3a40 solid;
+}
+
+#activityList li:nth-child(odd) {
+	background-color:#1c3a40;
+	border-left:15px #668c8c solid;
+}
+
+#activityList li a{
+	padding: 20px 140px 20px 20px;
+	color:#FFF;
 	display:block;
-}*/
+	background:url(../images/listBorder.png) repeat-x bottom left;
+}
+
+#activityListSection .titleHeader{
+	margin-left:-5px;
+}
+
+#map_canvas{
+	width:400px;
+	height:400px;
+	float:right;
+}
